@@ -1,0 +1,15 @@
+<%= form_with scope: :auth, url: "/user",  local: true do |form| %>
+  <p>
+    <%= form.label :email_address %><br>
+    <%= form.email_field :email_address %>
+  </p>
+
+  <p>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+  </p>
+
+  <p>
+    <%= form.submit :Register%>
+  </p>
+<% end %>
